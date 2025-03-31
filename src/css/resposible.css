@@ -1,0 +1,159 @@
+html {
+    font-size: 62.5%;
+    font-family: "DM Sans", sans-serif;
+}
+.bento-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.5rem;
+    padding: 8% 5%;
+    background-color: #F5F5F5;
+}
+.bento-container > div{
+    display: flex;
+    flex-direction: column;
+    width: 35.5rem;
+    border-radius: 1rem;
+}
+.social {
+    justify-content: center;
+    align-items: center;
+    background-color: var(--roxo-escuro);
+    text-align: center;
+}
+.social h1 {
+    font-size: 4.4rem;
+    font-weight: 500;
+    margin: 3rem 4rem;
+    line-height: 4rem;
+    color: var(--branco);
+}
+.social h1 span:first-child {
+    color: var(--amarelo-escuro);
+}
+.social h1 span:last-child, .create p span{
+    font-style: italic;
+}
+.social div {
+    content: url(../../assets/images/illustration-five-stars.webp);
+    width: 19rem;
+}
+.social p {
+    font-size: 1.7rem;
+    font-weight: 300;
+    color: var(--branco);
+    margin: 1rem 0 3rem;
+}
+.manage {
+    background-color: var(--branco);
+    height: 18rem;
+    padding: 2rem 1rem;
+}
+.manage div {
+    content: url(../../assets/images/illustration-multiple-platforms.webp);
+    margin-bottom: 1rem;
+    height: 7rem;
+}
+.manage p {
+    font-weight: 600;
+    line-height: 2rem;
+    margin-top: 2rem;
+}
+.text {
+    font-size: 2.7rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+    margin-top: 2rem;
+}
+.maintain {
+    background-color: var(--amarelo-escuro);
+    height: 20rem;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+.maintain .text{
+    margin-top: 1.4rem ;
+}
+.maintain div {
+    margin-top: 1.3rem;
+    content: url(../../assets/images/illustration-consistent-schedule.webp);
+    width: 22rem;
+    height: 15rem;
+    border-radius: 1rem;
+}
+.schedule{
+    height: 47rem;
+    background-color: var(--roxo-claro);
+    text-align: center;
+    padding: 0 2rem;
+    justify-content: space-between;
+}
+.schedule div{
+    content: url(../../assets/images/illustration-schedule-posts.webp);
+}
+.schedule p:last-child{
+    font-size: 1.7rem;
+    font-weight: 400;
+    margin: 0 2rem 2rem;
+}
+.grow{
+    justify-content: center;
+    align-items: center;
+    height: 37rem;
+    text-align: center;
+    background-color: var(--roxo-escuro);
+}
+.grow div{
+    content: url(../../assets/images/illustration-grow-followers.webp);
+    width: 23rem;
+}
+.grow p{
+    width: 22rem;
+    margin-top: 3rem;
+    color: var(--branco);
+}
+.faster{
+    height: 22rem;
+    padding: 0 2rem;
+    background-color: var(--branco);
+}
+.faster span{
+    font-size: 4.8rem;
+    margin-top: 1rem;
+    font-weight: 500;
+}
+.faster p{
+    font-size: 2rem;
+}
+.faster div{
+    content: url(../../assets/images/illustration-audience-growth.webp);
+    margin: 2rem 0;
+    width: 20rem;
+}
+.create{
+    height: 23rem;
+    padding-left: 3rem;
+    background-color: var(--amarelo-claro);
+}
+.create p{
+    width: 28rem;
+    margin: 4rem 0 3rem;
+}
+.create p span{
+    color: var(--roxo-escuro);
+}
+.create div{
+    content: url(../../assets/images/illustration-create-post.webp);
+    width: 20rem;
+}
+.write{
+    height: 35rem;
+    padding: 2rem 3rem;
+    background-color: var(--amarelo-escuro);
+}
+.write div{
+    content: url(../../assets/images/illustration-ai-content.webp);
+    margin-top: 2rem;
+    width: 22rem;
+}

@@ -1,173 +1,119 @@
-html {
-    font-size: 62.5%;
-    font-family: "DM Sans", sans-serif;
-}
+@media (min-width: 1100px){
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .bento-container {
+        display: grid;
+        grid-template-areas:"create social social schedule"
+                            "create manage maintain schedule"
+                            "write manage maintain schedule"
+                            "write faster grow grow";
+        grid-template-columns: repeat(4, 250px);
+        grid-template-rows: 330px 80px 170px 250px;
+        max-width: 1100px;
+        gap: 2rem;
+        padding: 0%;
+    }
+    .bento-container > div{
+        height: 100%;
+        width: 100%;
+    }
+    .text {
+        font-size: 3.5rem;
+        font-weight: 500;
+        line-height: 3.5rem;
+        margin-top: 2rem;
+    }
+    .create{
+        grid-area: create;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0px;
+        margin: 0;
+    }
+    .create p{
+        margin: 0 0 20px;
+        width: 20rem;
+        font-weight: 400;
+    }
+    .write{
+        grid-area: write;
+        padding: 1.8rem;
+    }
+    .write .text{
+        font-weight: 500;
+        width: 20rem;
+        margin-bottom: 30px;
 
-.bento-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 3.5rem;
-    padding: 8% 5%;
-    background-color: #F5F5F5;
-}
+    }
+    .social{
+        grid-area: social;
+    }
+    .social h1{
+        font-size: 6rem;
+        line-height: 6rem;
+    }
+    .manage{
+        grid-area: manage;
+        overflow: hidden;
+        padding: 20px;
+    }
+    .manage div{
+        width: 300px;
+        margin-left: 8px;
+    }
+    .manage .text{
+        font-weight: 600;
+        font-size: 3rem;
+        line-height: 3rem;
+    }
 
-.bento-container > div{
-    display: flex;
-    flex-direction: column;
-    width: 35.5rem;
-    /* height: 280px; */
-    border-radius: 1rem;
-}
+    .faster{
+        grid-area: faster;
+    }
+    .faster span{
+        font-weight: 500;
+        font-size: 6rem;
+    }
+    .faster p{
+        font-size: 1.8rem;
+    }
+    .faster div{
+        width: 175px;
+    }
+    .maintain{
+        grid-area: maintain;
+        padding: 2rem;
+    }
+    .maintain .text{
+        line-height: 3rem;
+    }
+    .bento-container .grow{
+        grid-area: grow;
+        flex-direction: row;
+    }
+    .grow .text{
+        width: 25rem;
+        text-align: left;
+        margin-top: 0rem;
+    }
+    .schedule{
+        grid-area: schedule;
+        overflow: hidden;
+    }
+    .schedule .text, .schedule p:last-child{
+        text-align: left;
+        margin: 20px 0;
+    }
+    .schedule div{
+        height: 300px;
+        width: max-content;
+        margin-left: 15px;
+    }
+    
 
-.bento-container .social {
-    justify-content: center;
-    align-items: center;
-    background-color: var(--roxo-escuro);
-    text-align: center;
-}
-
-.bento-container .social h1 {
-    font-size: 4.4rem;
-    font-weight: 500;
-    margin: 3rem 4rem;
-    line-height: 4rem;
-    color: var(--branco);
-}
-
-.bento-container .social h1 span:first-child {
-    color: var(--amarelo-escuro);
-}
-
-.bento-container .social h1 span:last-child, .bento-container .create p span{
-    font-style: italic;
-}
-
-.bento-container .social div {
-    content: url(../../assets/images/illustration-five-stars.webp);
-    width: 19rem;
-}
-
-.bento-container .social p {
-    font-size: 1.7rem;
-    font-weight: 300;
-    color: var(--branco);
-    margin: 1rem 0 3rem;
-}
-
-.bento-container .manage {
-    background-color: var(--branco);
-    height: 18rem;
-    padding: 2rem 1rem;
-}
-
-.bento-container .manage div {
-    content: url(../../assets/images/illustration-multiple-platforms.webp);
-    margin-bottom: 1rem;
-    height: 7rem;
-}
-
-.bento-container .manage p {
-    font-weight: 600;
-    line-height: 2rem;
-    margin-top: 2rem;
-}
-
-.bento-container .text {
-    font-size: 2.7rem;
-    font-weight: 600;
-    line-height: 2.4rem;
-    margin-top: 2rem;
-}
-
-.bento-container .maintain {
-    background-color: var(--amarelo-escuro);
-    height: 20rem;
-    padding: 0 2rem;
-    overflow: hidden;
-}
-.bento-container .maintain .text{
-    margin-top: 1.4rem ;
-}
-.bento-container .maintain div {
-    margin-top: 1.3rem;
-    content: url(../../assets/images/illustration-consistent-schedule.webp);
-    width: 22rem;
-    height: 15rem;
-    border-radius: 1rem;
-}
-.bento-container .schedule{
-    height: 47rem;
-    background-color: var(--roxo-claro);
-    text-align: center;
-    padding: 0 2rem;
-    justify-content: space-between;
-}
-.bento-container .schedule div{
-    content: url(../../assets/images/illustration-schedule-posts.webp);
-}
-.bento-container .schedule p:last-child{
-    font-size: 1.7rem;
-    font-weight: 400;
-    margin: 0 2rem 2rem;
-}
-.bento-container .grow{
-    justify-content: center;
-    align-items: center;
-    height: 37rem;
-    text-align: center;
-    background-color: var(--roxo-escuro);
-}
-.bento-container .grow div{
-    content: url(../../assets/images/illustration-grow-followers.webp);
-    width: 23rem;
-}
-.bento-container .grow p{
-    width: 22rem;
-    margin-top: 3rem;
-    color: var(--branco);
-}
-.bento-container .faster{
-    height: 22rem;
-    padding: 0 2rem;
-    background-color: var(--branco);
-}
-.bento-container .faster span{
-    font-size: 4.8rem;
-    margin-top: 1rem;
-    font-weight: 500;
-}
-.bento-container .faster p{
-    font-size: 2rem;
-}
-.bento-container .faster div{
-    content: url(../../assets/images/illustration-audience-growth.webp);
-    margin: 2rem 0;
-    width: 20rem;
-}
-.bento-container .create{
-    height: 23rem;
-    padding-left: 3rem;
-    background-color: var(--amarelo-claro);
-}
-.bento-container .create p{
-    width: 28rem;
-    margin: 4rem 0 3rem;
-}
-.bento-container .create p span{
-    color: var(--roxo-escuro);
-}
-.bento-container .create div{
-    content: url(../../assets/images/illustration-create-post.webp);
-    width: 20rem;
-}
-.bento-container .write{
-    height: 35rem;
-    padding: 2rem 3rem;
-    background-color: var(--amarelo-escuro);
-}
-.bento-container .write div{
-    content: url(../../assets/images/illustration-ai-content.webp);
-    margin-top: 2rem;
-    width: 22rem;
 }
